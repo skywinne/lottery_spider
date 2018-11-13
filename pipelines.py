@@ -10,7 +10,7 @@ import pymysql
 class Lottery3DPipeline(object):
 
     def __init__(self):
-        self.conn = pymysql.connect(host='103.27.5.156', user='developer', passwd='Developer!123', db='spider', charset='utf8')
+        self.conn = pymysql.connect(host='127.0.0.1', user='root', passwd='123456', db='spider', charset='utf8')
         self.cursor = self.conn.cursor()
 
     def process_item(self, item, spider):
